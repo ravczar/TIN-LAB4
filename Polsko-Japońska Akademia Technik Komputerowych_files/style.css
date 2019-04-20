@@ -19,13 +19,13 @@ body #container {
     grid-template-areas: "header header header" "navbar navbar navbar" "left main right" "footer footer footer";
   }
 }
-@media only screen and (min-width: 600px) and (max-width: 800px) {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
   body #container {
     grid-template-columns: 50% 50%;
     grid-template-areas: "header header " "navbar navbar " "main main " "left right " "footer footer ";
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   body #container {
     grid-template-columns: 100%;
     grid-template-areas: "header" "navbar" "main " "right " "footer ";
@@ -61,7 +61,7 @@ body #container nav ul li {
   max-width: 100%;
   cursor: pointer;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   body #container nav ul li {
     background-image: url(./bg_nav.png);
     display: block;
@@ -83,7 +83,7 @@ body #container #left {
   background-color: #ffe6e6;
   font-size: 13px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
   body #container #left {
     display: none;
   }
