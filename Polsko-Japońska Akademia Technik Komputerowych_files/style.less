@@ -6,13 +6,14 @@
 @footer-color: #ffbdbd;
 
 /* Sizes fonts */
-@leftAndRightColumn: 13px;
+@leftAndRightColumn: 16px;
 @menuHeight: 28px;
 @bodyFontType: Georgia, 'Times New Roman', Times, serif;
 
 /* Background files */
 @btn-backgrnd: url(./bg_nav.png);
 @btn-bckgrndHover: url(./bg_nav_h.png);
+@list-bullet: url(./bullet.png);
 
 /* Media queries */
 @wide:  ~"only screen and (min-width: 800px)";
@@ -130,9 +131,11 @@ body{
             }
             ul{
                 list-style-type: none;
-                list-style-image: url(./bullet.png);
+                //list-style-image: @list-bullet; // Nie ustawia w centrum wysokosci zdania, ale działa poprawnie.
                 padding-bottom: 1em;
                 li{
+                    background: @list-bullet no-repeat left top;
+                    padding: 0px 0px 0px 25px;
                     &:first-child{
                         margin-top: 2em;
                     }

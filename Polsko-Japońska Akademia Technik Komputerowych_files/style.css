@@ -81,7 +81,7 @@ body #container #left {
   padding: 0 9px 0 9px;
   grid-area: left;
   background-color: #ffe6e6;
-  font-size: 13px;
+  font-size: 16px;
 }
 @media only screen and (max-width: 599px) {
   body #container #left {
@@ -100,17 +100,18 @@ body #container #important {
   padding: 0 9px 0 9px;
   grid-area: right;
   background-color: #ffd6d6;
-  font-size: 13px;
+  font-size: 16px;
 }
 body #container #important h2 {
   font-weight: normal;
 }
 body #container #important ul {
   list-style-type: none;
-  list-style-image: url(./bullet.png);
   padding-bottom: 1em;
 }
 body #container #important ul li {
+  background: url(./bullet.png) no-repeat left top;
+  padding: 0px 0px 0px 25px;
   margin-top: 1em;
 }
 body #container #important ul li:first-child {
